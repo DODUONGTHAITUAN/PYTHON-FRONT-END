@@ -1,0 +1,51 @@
+@import 'variables';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+// mdb-react-ui-kit v5
+@import '../../node_modules/mdb-react-ui-kit/dist/css/mdb.min.css';
+// React markdow
+@import '../../node_modules/react-markdown-editor-lite/lib/index.css';
+
+$fa-font-path: '~@fortawesome/fontawesome-free-webfonts/webfonts';
+@import '~@fortawesome/fontawesome-free-webfonts/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss';
+@import '~@fortawesome/fontawesome-free-webfonts/scss/fa-regular.scss';
+@import '~@fortawesome/fontawesome-free-webfonts/scss/fa-brands.scss';
+
+@import 'base';
+@import 'form';
+@import 'mixins';
+
+// Components
+@import './components/customs/confirm-modal';
+@import './components/customs/custom-scrollbars';
+@import './components/customs/custom-toast';
+@import './components/customs/date-picker';
+@import './components/customs/input-suggest';
+@import './components/system/navigator';
+@import './components/system/header';
+@import './components/client/header';
+@import './components/client/footer';
+@import './components/client/product';
+@import './components/client/promotion-phone';
+@import './components/client/all-product';
+@import './components/client/sidebar-item';
+@import './components/client/guides';
+@import './components/client/empty-cart';
+@import './components/client/specifications';
+@import './components/client/product-view';
+@import './components/client/slider/slider';
+@import './components/client/account/my-account';
+@import './components/client/review-product';
+@import './components/customs/overlay';
+@import './components/customs/pagination';
+
+@import './components/system/profile-user';
+@import './components/system/product-modal';
+@import './components/system/dropdown-option';
+
+// Pages
+@import './pages/login';
+@import './pages/client/detail-product';
+@import './pages/system/user-manage';
+@import './pages/system/detail-user';
+@import './pages/system/product-mange';

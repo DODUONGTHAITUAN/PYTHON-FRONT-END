@@ -1,0 +1,82 @@
+.ap {
+    padding-bottom: 40px;
+    .ap__left,
+    .ap__right {
+        padding-top: 10px;
+    }
+    .ap__right {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        &__top {
+            @include flex(center, space-between);
+            &__left {
+                display: flex;
+                align-items: center;
+                &__label {
+                    margin-right: 20px;
+                }
+                &__features {
+                    display: flex;
+                    align-items: center;
+                    &__item {
+                        cursor: pointer;
+                        font-weight: 300;
+                        color: rgba(0, 0, 0, 0.6);
+                        padding: 5px 15px;
+                        border: 1px solid #ddd;
+                        transition: all linear 0.1s;
+                        &.active {
+                            &,
+                            &:hover {
+                                color: #fff;
+                                background-color: #cb1c22;
+                                border: 1px solid #cb1c22;
+                            }
+                        }
+                        &:hover {
+                            color: #fff;
+                            background-color: #8392a5;
+                            border: 1px solid #8392a5;
+                        }
+                    }
+                }
+            }
+            &__right {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                i {
+                    cursor: pointer;
+                    color: rba(0, 0, 0, 0.7);
+                    font-size: 18px;
+                    transition: all linear 0.1s;
+                    &.active {
+                        color: red;
+                    }
+                }
+            }
+        }
+        &__bottom {
+            @include flex(center, space-between);
+            flex-wrap: wrap;
+        }
+        &__btn {
+            margin: 50px 0 20px 0;
+            @include flex(center, center);
+            flex-direction: column;
+            span {
+                color: rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+                border: 1px solid #eee;
+                padding: 10px 25px;
+                border-radius: 3px;
+                background-color: #dee2e6;
+                transition: all linear 0.1s;
+                &:hover {
+                    color: rgba(255, 255, 255, 0.7);
+                    background-color: #8392a5;
+                }
+            }
+        }
+    }
+}

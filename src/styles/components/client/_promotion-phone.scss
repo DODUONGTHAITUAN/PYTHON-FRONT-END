@@ -1,0 +1,35 @@
+.pp {
+    padding: 50px 0 0 0;
+    .wrapper {
+        border: 1px solid #eee;
+        border-radius: 4px;
+    }
+    .pp__top {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+            &:first-child {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 18px;
+            }
+            &:last-child {
+                color: blue;
+                cursor: pointer;
+                transition: all linear 0.1s;
+                &:hover {
+                    color: #000;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .pp__products {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

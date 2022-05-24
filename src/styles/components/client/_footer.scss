@@ -1,0 +1,78 @@
+.footer__container {
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    .footer__top {
+        @include flex(flex-start);
+        &__menu {
+            width: 80%;
+            @include flex(flex-start);
+            gap: 30px;
+            margin-right: auto;
+            &__item {
+                p {
+                    color: #3399d2;
+                    font-size: 12px;
+                    transition: all linear 0.1s;
+                    &:hover {
+                        color: #000;
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        &__payment {
+            width: 20%;
+            margin-right: 50px;
+            &__title {
+                font-size: 16px;
+                font-weight: 600;
+            }
+            &__icons {
+                @include flex(center);
+                gap: 20px;
+                i {
+                    font-size: 25px;
+                }
+            }
+            &__sp {
+                &__title,
+                &__phone {
+                    margin: 5px 0;
+                }
+                &__title {
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+                &__phone {
+                    color: #d0021b;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+        &__connect {
+            width: 20%;
+            &__title {
+                font-size: 16px;
+                font-weight: 600;
+            }
+            &__icons {
+                flex-wrap: wrap;
+                @include flex(center);
+                gap: 10px;
+                font-size: 25px;
+            }
+        }
+    }
+    .footer__bottom {
+        background-color: #eee;
+        font-size: 12px;
+        &__copyright {
+            color: rgba(0, 0, 0, 0.6);
+            margin: 0 auto;
+            padding: 5px 15px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.pw {
+    padding: 5px 10px 20px 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    &__heading {
+        border-bottom: 1px solid #ddd;
+        @include flex(flex-start, space-between);
+        &__left {
+            span {
+                font-weight: 600;
+                font-size: 18px;
+            }
+        }
+    }
+    &__main {
+        @include flex();
+    }
+}

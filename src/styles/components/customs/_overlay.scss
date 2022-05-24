@@ -1,0 +1,12 @@
+.overlay__wrapper {
+    .modal-content {
+        background-color: transparent;
+        border: none;
+        margin: 0 auto;
+        .overlay__content {
+            div {
+                margin: 50% auto;
+            }
+        }
+    }
+}

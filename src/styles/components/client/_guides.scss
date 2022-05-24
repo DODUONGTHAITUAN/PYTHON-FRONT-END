@@ -1,0 +1,62 @@
+.guides {
+    &__content {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        &__heading {
+            border-bottom: 1px solid #ddd;
+            span {
+                display: inline-block;
+                padding: 10px;
+            }
+        }
+        &__ques {
+            font-size: 17px;
+            &__item {
+                padding: 15px 10px;
+                &.active {
+                    background-color: #f8f9fa;
+                }
+                &:not(:last-child) {
+                    border-bottom: 1px solid #eef0f2;
+                }
+                &__top {
+                    cursor: pointer;
+                    justify-content: space-between;
+                    &,
+                    &__left {
+                        display: flex;
+                        align-items: center;
+                    }
+                    &__left {
+                        i {
+                            font-size: 25px;
+                            margin-right: 10px;
+                            color: rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                    &__right {
+                        i {
+                            color: rgba(0, 0, 0, 0.5);
+                            transition: all linear 0.1s;
+                            &:hover {
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+
+                &__bottom {
+                    p {
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                    padding-top: 20px;
+                    padding-right: 50px;
+                }
+            }
+        }
+    }
+}

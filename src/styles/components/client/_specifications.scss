@@ -1,0 +1,25 @@
+.s-main {
+    padding-top: 20px;
+    margin: 0 0 20px 0;
+    @include flex(flex-start, space-between);
+    gap: 30px;
+    &__left,
+    &__right {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+    }
+    &__left {
+        width: 60%;
+    }
+    &__right {
+        width: 40%;
+        &__more {
+            text-align: center;
+            span {
+                cursor: pointer;
+            }
+        }
+    }
+}

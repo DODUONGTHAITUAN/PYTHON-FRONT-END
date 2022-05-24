@@ -1,0 +1,33 @@
+.profile {
+    position: relative;
+    transition: all linear 0.2s;
+    &__menu {
+        display: none;
+        font-size: 13px;
+        padding: 0;
+        z-index: 10;
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 90%;
+        border: 1px solid #ddd;
+        list-style: none;
+        background-color: #fff;
+        color: rgb(97, 94, 94);
+        border-radius: 4px;
+        &__item {
+            padding: 10px;
+            width: 150px;
+            &:not(:last-child) {
+                border-bottom: 1px solid #eee;
+            }
+            transition: all linear 0.2s;
+            &:hover {
+                color: #1a94ff;
+            }
+        }
+    }
+    &:hover > &__menu {
+        display: block;
+    }
+}

@@ -1,0 +1,27 @@
+.um {
+    .um__top {
+        margin-top: 20px;
+    }
+    .um__bottom {
+        margin-top: 20px;
+        .um__pages {
+            .page-item {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .um__table__actions {
+        text-align: center;
+        @include flex(center, center);
+        gap: 25px;
+        font-size: 20px;
+        i {
+            cursor: pointer;
+            transition: all linear 0.2s;
+            &:hover {
+                color: green;
+            }
+        }
+    }
+}
